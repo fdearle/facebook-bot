@@ -1,0 +1,11 @@
+.idea
+.gradle
+.gradle-exec-wait.pid
+.gradletasknamecache
+build
+out
+.c9
+*.iml
+*.iws
+*.ipr
+scratch.json
