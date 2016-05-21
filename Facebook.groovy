@@ -1,8 +1,7 @@
-package bot
-//@Grapes([
-//        @Grab(group='net.sourceforge.nekohtml', module='nekohtml', version='1.9.22'),
-//        @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7.1')
-//])
+@Grapes([
+        @Grab(group='net.sourceforge.nekohtml', module='nekohtml', version='1.9.22'),
+        @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7.1')
+])
 
 import groovyx.net.http.HTTPBuilder
 import static groovyx.net.http.ContentType.*
@@ -10,7 +9,12 @@ import static groovyx.net.http.Method.*
 
 
 class Facebook {
-    def accessToken = 'CAAGvmeTzzmcBAEngaZBRtZAVtrMexkl5Nz6uOjRvxBHbgXgyTfXELE789eKY4NA33NJNjtghtj8LwoD5uqruZA1wZB04rOMLJd6H77lQmtZCassJ9skqEbZBy7hp2vd9PzYZCgFNQRRYTUUcZA15y90ypVoeOUBBLLT7vQof52mV3oj9sfYjlQMBZBEOuV1Pukw2WiEmQ1rAcRQZDZD'
+    def bot = 1
+    def accessToken = 'EAACtWxlZBPvUBANOqyQL1vrh4YtJhcK6ZAazZCeHjjDRJa9NOM4o3ZCTVmrsdgu5YMZCw6wVS8T4PjhBIInjgkSKLfYRKaStEBIH0j8OZCEHWWFyuoQ4WTuRGtD4GFeb6xmJ6PAYMrKaS0u5KCHSiPjwH3KqZB0Th8cUmozL8a31gZDZD'
+//    def bot = 2
+//    def accessToken = 'EAAYNReg0EgsBAODE8PtKHXlMcBl49rQUgc9O96bhhjpmQeRwhMfL3bOFG9ohxQkuDsmh1WcOy1PZB5psRXLJJBz5Yiii06QlOKdjtEvJR9ZB02zqk8n3HOs7anihbpgZCLZCDTdqwP98aIxlprw3YoJiMVF0hj1GeUeF0m6higZDZD'
+//    def bot = 3
+//    def accessToken = 'EAADQZCWqeQsYBAKW3sYiewZARXYhfXiTPysxJZCEMV1bjw3Iq4jlCOZAZBvZBO4qZAQ8zGrQW3j2VuZBQb4u4OGeZBxYb5SihZBde3FIKyRmZBeJVDC7HiC0lfYa6nvUZC4PDsG0ZB0tmQ7NM9p9jhtwD0EOurdZAgpZC8VzxDQiNDWlu1HuQZDZD'
 
     void sendTextMessage(userId, message) {
         def http = new HTTPBuilder('https://graph.facebook.com/')

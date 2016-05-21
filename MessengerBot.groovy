@@ -1,5 +1,3 @@
-package bot
-
 class MessengerBot extends Facebook {
     def handleMessage(userId, String message) {
 
