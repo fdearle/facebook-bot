@@ -1,4 +1,3 @@
-esolver(name='artifactory', root='http://artifactory:8081/artifactory/repo1',  m2Compatible=true)
 @Grapes([
     @Grab(group='net.sourceforge.nekohtml', module='nekohtml', version='1.9.22'),
     @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7.1')
