@@ -10,11 +10,11 @@ import static groovyx.net.http.Method.*
 
 class Facebook {
     def bot = 1
-    def accessToken = 'EAACtWxlZBPvUBANOqyQL1vrh4YtJhcK6ZAazZCeHjjDRJa9NOM4o3ZCTVmrsdgu5YMZCw6wVS8T4PjhBIInjgkSKLfYRKaStEBIH0j8OZCEHWWFyuoQ4WTuRGtD4GFeb6xmJ6PAYMrKaS0u5KCHSiPjwH3KqZB0Th8cUmozL8a31gZDZD'
+    def accessToken = 'access_token'
 //    def bot = 2
-//    def accessToken = 'EAAYNReg0EgsBAODE8PtKHXlMcBl49rQUgc9O96bhhjpmQeRwhMfL3bOFG9ohxQkuDsmh1WcOy1PZB5psRXLJJBz5Yiii06QlOKdjtEvJR9ZB02zqk8n3HOs7anihbpgZCLZCDTdqwP98aIxlprw3YoJiMVF0hj1GeUeF0m6higZDZD'
+//    def accessToken = 'access_token'
 //    def bot = 3
-//    def accessToken = 'EAADQZCWqeQsYBAKW3sYiewZARXYhfXiTPysxJZCEMV1bjw3Iq4jlCOZAZBvZBO4qZAQ8zGrQW3j2VuZBQb4u4OGeZBxYb5SihZBde3FIKyRmZBeJVDC7HiC0lfYa6nvUZC4PDsG0ZB0tmQ7NM9p9jhtwD0EOurdZAgpZC8VzxDQiNDWlu1HuQZDZD'
+//    def accessToken = 'access_token'
 
     void sendTextMessage(userId, message) {
         def http = new HTTPBuilder('https://graph.facebook.com/')
