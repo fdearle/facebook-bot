@@ -2,9 +2,20 @@ package com.dearle.bot
 
 class MyBot extends MessengerBotService {
     def handleMessage(userId, String message) {
-        logger.log "handle message for $userId : $message"
-        if (hasWords(["help", "helping", "assist", "assistance"], message)) {
-            help(userId)
+
+
+
+
+
+
+
+
+        if (hasWords(["doritos", "spicy", "cheesy", "original"], message)) {
+            sendTemplate userId, Templates.Doritos
+        }else if (hasWords(["help", "helping", "assist", "assistance"], message)) {
+            help userId
+        }else if (hasWords(["harry potter", "hagrid", "harry", "potter"], message)) {
+            sendTemplate userId, Templates.HarryPotter
         } else {
             sendTextMessage(userId, "You said, '${message}'")
             sendTextMessage(userId, "I don't quite understand your meaning! Type help for some hints as to how to talk ot me.")
@@ -24,4 +35,5 @@ class MyBot extends MessengerBotService {
         sendTextMessage(userId,
                 "Type a question and see if I understand")
     }
+
 }
